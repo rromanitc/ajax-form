@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AJAX Sample</title>
-</head>
-<body>
-    
 
-    
-    <section>
-        <h1>Contact us</h1>
-        <div id="form-msg"></div>
-        <form>
-            <label>Your name:
-                <input type="text" id="visitor-name" required>
-            </label>
-            <br>
-            <label>Your email:
-                <input type="email" id="visitor-email" required>
-            </label>
-            <br>
-            <input type="submit" id="submit-contact-form">
-        </form>
-    </section>
-    
-    <footer>
-        <div id="timestamp"></div>
-    </footer>
-    
+  <head>
+
+    <meta charset="utf-8">
+    <title>Agency</title>
+
+  </head>
+
+  <body>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
-    <script src="js/index-form.js"></script>  
-</body>
+      crossorigin="anonymous">  
+    </script>
+
+    
+    
+     <section id="contact">
+      <div>
+        <div>
+          <div>
+            <h2>Contact Us</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
+        </div>
+        <div>
+          <div>
+            <form name="sentMessage" novalidate>
+              <div>
+                <div>
+                  <div>
+                    <input type="text" id="client-name" placeholder="Your Name *">
+                    <p></p>
+                  </div>
+                  <div>
+                    <input type="email" id="client-email" placeholder="Your Email *" >
+                    <p></p>
+                  </div>
+                  <div>
+                    <input type="tel" id="client-phone" placeholder="Your Phone *">
+                    <p></p>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <textarea id="client-message" placeholder="Your Message *"></textarea>
+                    <p></p>
+                  </div>
+                </div>
+                <div></div>
+                <div>
+                  <div></div>
+                  <button type="submit" id="submit-form">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script src="js/ajax-form.js"></script> 
+    
+  </body>
 </html>
