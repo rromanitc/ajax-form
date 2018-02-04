@@ -12,8 +12,9 @@ $('#submit-form').click(function(ev){
             },
             dataType: "json"
         }).done(function() {
-            $('#form')[0].reset();
+            
 			alert("Thank you for contacting us. We will call you back soon!");
+			$('#my-form')[0].reset();
         }).fail(function(){
             alert("Error");
         });
